@@ -86,14 +86,19 @@ var special = [
 	"\\",
 ];
 
-
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+	var password = generatePassword();
+	var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+	passwordText.value = password;
+}
 
+// Generate random selection of array indices
+function getRandomCharacter(array) {
+	var randomIndex = Math.floor(Math.random() * array.length);
+	var characterValue = array[randomIndex];
+	return characterValue;
 }
 
 // Add event listener to generate button
