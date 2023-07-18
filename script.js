@@ -131,7 +131,7 @@ function generatePassword() {
 	var confirmNumber = confirm(
 		"Use numbers in your password? Select cancel to opt out."
 	);
-    // empty variables to track options
+	// empty variables to track options
 	var characterOptions = [];
 	var confirmations = 0;
 	// Conditional statments to select character types
@@ -159,5 +159,11 @@ function generatePassword() {
 		finalPassword.push(specialCharacters);
 		confirmations++;
 	}
+	// Loops through conditional statements until all conditions are met then stops
+	for (var i = 0; i < passwordLength - confirmations; i++) {
+		finalPassword.push(getRandomCharacter(characterOptions));
+	}
+	return finalPassword.join("");
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
