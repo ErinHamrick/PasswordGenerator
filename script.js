@@ -131,6 +131,33 @@ function generatePassword() {
 	var confirmNumber = confirm(
 		"Use numbers in your password? Select cancel to opt out."
 	);
-    }
+    // empty variables to track options
+	var characterOptions = [];
+	var confirmations = 0;
+	// Conditional statments to select character types
+	if (confirmLowercase) {
+		characterOptions = [...lowercase, ...characterOptions];
+		var lowercaseLetter = getRandomCharacter(lowercase);
+		finalPassword.push(lowercaseLetter);
+		confirmations++;
+	}
+	if (confirmUppercase) {
+		characterOptions = [...uppercase, ...characterOptions];
+		var uppercaseLetter = getRandomCharacter(uppercase);
+		finalPassword.push(uppercaseLetter);
+		confirmations++;
+	}
+	if (confirmNumber) {
+		characterOptions = [...numbers, ...characterOptions];
+		var numbersAgain = getRandomCharacter(numbers);
+		finalPassword.push(numbersAgain);
+		confirmations++;
+	}
+	if (confirmSpecialCharacters) {
+		characterOptions = [...special, ...characterOptions];
+		var specialCharacters = getRandomCharacter(special);
+		finalPassword.push(specialCharacters);
+		confirmations++;
+	}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
