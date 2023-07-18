@@ -101,5 +101,36 @@ function getRandomCharacter(array) {
 	return characterValue;
 }
 
+// primary function of page
+function generatePassword() {
+	var finalPassword = [];
+	var passwordLength = parseInt(
+		prompt(
+			"How long would you like your password to be? Must be between 8-128;"
+		)
+	);
+	// Conditional statement to alert user if conditions are not met
+	if (
+		passwordLength < 8 ||
+		passwordLength > 128 ||
+		Number.isNaN(passwordLength)
+	) {
+		alert("Input must be a number between 8-128");
+		return;
+	}
+	// variables for confirm functions
+	var confirmLowercase = confirm(
+		"Use lowercase letters in your password? Select cancel to opt out."
+	);
+	var confirmUppercase = confirm(
+		"Use uppercase letters in your password? Select cancel to opt out."
+	);
+	var confirmSpecialCharacters = confirm(
+		"Use special characters in your password? Select cancel to opt out."
+	);
+	var confirmNumber = confirm(
+		"Use numbers in your password? Select cancel to opt out."
+	);
+    }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
