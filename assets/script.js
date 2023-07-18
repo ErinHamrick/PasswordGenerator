@@ -104,6 +104,7 @@ function getRandomCharacter(array) {
 // primary function of page
 function generatePassword() {
 	var finalPassword = [];
+	// Parses string input into integer
 	var passwordLength = parseInt(
 		prompt(
 			"How long would you like your password to be? Must be a number between 8-128;"
