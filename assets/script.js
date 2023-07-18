@@ -103,7 +103,6 @@ function getRandomCharacter(array) {
 
 // primary function of page
 function generatePassword() {
-	var finalPassword = [];
 	// Parses string input into integer
 	var passwordLength = parseInt(
 		prompt(
@@ -135,6 +134,7 @@ function generatePassword() {
 	// empty variables to track options
 	var characterOptions = [];
 	var confirmations = 0;
+	var finalPassword = [];
 	// Conditional statments to select character types
 	if (confirmLowercase) {
 		characterOptions = [...lowercase, ...characterOptions];
