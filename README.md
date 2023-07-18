@@ -1,11 +1,13 @@
 # PasswordGenerator
 
 ## Description
+
 JavaScript code written to generate random password that meets specific criteria as determined by the user.
 
-Once the length of password is chosen, there are arrays of character types that can be selected by the user for inclusion in password. The for loop iterates through the if statements until the selected criteria area met and then generates a random password. 
+Once the length of password is chosen, there are arrays of character types that can be selected by the user for inclusion in password. The for loop iterates through the if statements until the selected criteria area met and then generates a random password.
 
 ## Screenshot
+
 ![Screenshot](./assets/Password%20Generator%20Screenshot.png)
 
 ## Live URL
