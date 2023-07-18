@@ -12,6 +12,8 @@ Once the length of password is chosen, there are arrays of character types that 
 
 ## Live URL
 
+https://erinhamrick.github.io/PasswordGenerator/
+
 ## License
 
 Copyright (c) 2023 Erin Hamrick
