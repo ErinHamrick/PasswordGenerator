@@ -106,7 +106,7 @@ function generatePassword() {
 	var finalPassword = [];
 	var passwordLength = parseInt(
 		prompt(
-			"How long would you like your password to be? Must be between 8-128;"
+			"How long would you like your password to be? Must be a number between 8-128;"
 		)
 	);
 	// Conditional statement to alert user if conditions are not met
