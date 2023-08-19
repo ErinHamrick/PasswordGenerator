@@ -160,8 +160,12 @@ function generatePassword() {
 		finalPassword.push(specialCharacters);
 		confirmations++;
 	} else {
-		alert("Must choose at least one character type");
-	}
+		alert("Must select at least one character type");
+		var passwordText = document.querySelector("#password");
+		passwordText.textContent('')
+
+	
+			}
 	// Loops through conditional statements until all conditions are met then stops
 	for (var i = 0; i < passwordLength - confirmations; i++) {
 		finalPassword.push(getRandomCharacter(characterOptions));
