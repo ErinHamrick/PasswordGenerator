@@ -159,7 +159,7 @@ function generatePassword() {
 		var specialCharacters = getRandomCharacter(special);
 		finalPassword.push(specialCharacters);
 		confirmations++;
-	} else {
+	} else if (!confirmations) {
 		alert("Must select at least one character type");
 		var passwordText = document.querySelector("#password");
 		passwordText.textContent('')
