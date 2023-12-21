@@ -9,12 +9,18 @@ body,
 .wrapper {
 	height: 100%;
 	margin-top: 30px;
+	margin-bottom: 0;
 	padding: 0;
 }
 
 body {
 	font-family: sans-serif;
 	background-color: #f9fbfd;
+	background-image: url('/assets/blue-futuristic-networking-technology_53876-100679.avif');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
 }
 
 .wrapper {
@@ -27,11 +33,11 @@ header {
 	text-align: center;
 	padding: 20px;
 	padding-top: 0px;
-	color: hsl(206, 17%, 28%);
+	color: hsl(206, 39%, 71%);
 }
 
 .card {
-	background-color: hsl(0, 0%, 100%);
+	background-color: hsl(192, 53%, 38%);
 	border-radius: 5px;
 	border-width: 1px;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -40,6 +46,7 @@ header {
 	margin: 0 auto;
 	max-width: 800px;
 	padding: 30px 40px;
+	text-align: center;
 }
 
 .card-header::after {
@@ -93,9 +100,9 @@ button[disabled] {
 	background: #c0c7cf;
 }
 
-.float-right {
+/* .float-right {
 	float: right;
-}
+} */
 
 #password {
 	-webkit-appearance: none;
