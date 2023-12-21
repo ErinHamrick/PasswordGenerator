@@ -14,7 +14,7 @@ html,
 
 body {
 	font-family: sans-serif;
-	/* background-color: #f9fbfd; */
+	background-color: #4d4f4f;
 	background-image: url('/assets/blue-futuristic-networking-technology_53876-100679.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -31,7 +31,7 @@ header {
 	text-align: center;
 	padding: 20px;
 	padding-top: 0px;
-	color: hsl(206, 39%, 71%);
+	color: hsl(192, 53%, 38%)
 }
 
 .card {
