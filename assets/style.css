@@ -31,7 +31,7 @@ header {
 	text-align: center;
 	padding: 20px;
 	padding-top: 0px;
-	color: hsl(192, 53%, 38%)
+	color: hsl(192, 53%, 38%);
 }
 
 .card {
@@ -125,13 +125,9 @@ button[disabled] {
 
 @media (max-width: 690px) {
 	body {
-		font-family: sans-serif;
-		/* background-color: #f9fbfd; */
-		background-image: url('/assets/blue-futuristic-networking-technology-profile.jpg');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
+		background-color: #4d4f4f;
 	}
+	
 	.btn {
 		font-size: 1rem;
 		margin: 16px 0px 0px 0px;
