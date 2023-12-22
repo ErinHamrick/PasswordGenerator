@@ -15,7 +15,7 @@ html,
 body {
 	font-family: sans-serif;
 	background-color: #4d4f4f;
-	background-image: url('/assets/blue-futuristic-networking-technology_53876-100679.jpg');
+	background-image: url(../assets/blue-futuristic-networking-technology_53876-100679.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
